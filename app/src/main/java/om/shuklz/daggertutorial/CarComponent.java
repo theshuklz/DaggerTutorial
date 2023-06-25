@@ -2,7 +2,7 @@ package om.shuklz.daggertutorial;
 
 import dagger.Component;
 
-@Component
+@Component(modules = WheelsModule.class)
 public interface CarComponent {
     //Component creates the dependency acyclic graph
     //This is the injector, it can inject in provision methods, constructor or fields
