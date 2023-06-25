@@ -1,7 +1,10 @@
-package om.shuklz.daggertutorial;
+package om.shuklz.daggertutorial.dagger;
 
 import dagger.Module;
 import dagger.Provides;
+import om.shuklz.daggertutorial.car.Rims;
+import om.shuklz.daggertutorial.car.Tires;
+import om.shuklz.daggertutorial.car.Wheels;
 
 @Module
 public class WheelsModule {

@@ -1,6 +1,8 @@
-package om.shuklz.daggertutorial;
+package om.shuklz.daggertutorial.dagger;
 
 import dagger.Component;
+import om.shuklz.daggertutorial.MainActivity;
+import om.shuklz.daggertutorial.car.Car;
 
 @Component(modules = {WheelsModule.class, DieselEngineModule.class})
 public interface CarComponent {

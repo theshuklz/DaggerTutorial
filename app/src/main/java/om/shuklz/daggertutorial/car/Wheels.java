@@ -1,8 +1,6 @@
-package om.shuklz.daggertutorial;
+package om.shuklz.daggertutorial.car;
 
 import android.util.Log;
-
-import javax.inject.Inject;
 
 public class Wheels {
     private static final String TAG = "Car";

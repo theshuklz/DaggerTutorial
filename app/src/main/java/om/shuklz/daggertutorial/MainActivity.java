@@ -6,9 +6,14 @@ import android.os.Bundle;
 
 import javax.inject.Inject;
 
+import om.shuklz.daggertutorial.car.Car;
+import om.shuklz.daggertutorial.dagger.CarComponent;
+import om.shuklz.daggertutorial.dagger.DaggerCarComponent;
+
 public class MainActivity extends AppCompatActivity {
 
-    @Inject Car car;
+    @Inject
+    Car car;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

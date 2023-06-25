@@ -1,9 +1,9 @@
-package om.shuklz.daggertutorial;
-
-import android.util.Log;
+package om.shuklz.daggertutorial.dagger;
 
 import dagger.Binds;
 import dagger.Module;
+import om.shuklz.daggertutorial.car.DieselEngine;
+import om.shuklz.daggertutorial.car.Engine;
 
 @Module
 public abstract class DieselEngineModule {
