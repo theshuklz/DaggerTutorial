@@ -9,4 +9,5 @@ public interface CarComponent {
 
     //name doesn't matter
     Car getCar();
+    void injectFieldsIn(MainActivity activity);
 }

@@ -8,11 +8,15 @@ import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
 
+    @Inject Car car;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         CarComponent component = DaggerCarComponent.create();
-        component.getCar().drive();
+        //we have to do this for field injection
+        component.injectFieldsIn(this);
+        car.drive();
     }
 }
