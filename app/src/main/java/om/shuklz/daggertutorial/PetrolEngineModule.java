@@ -1,13 +1,12 @@
 package om.shuklz.daggertutorial;
 
+import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class PetrolEngineModule {
+public abstract class PetrolEngineModule {
 
-    @Provides
-     Engine provideEngine(PetrolEngine engine){
-        return engine;
-    }
+    @Binds
+     abstract Engine bindsEngine(PetrolEngine engine);
 }
