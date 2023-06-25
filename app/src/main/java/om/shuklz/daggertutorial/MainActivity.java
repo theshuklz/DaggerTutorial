@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         CarComponent component = DaggerCarComponent.create();
         //we have to do this for field injection
+        //Field and method injection are automatically executed if only we do
+        //constructor injection. Since we can't do it in main activity, we have to inject it manually
         component.injectFieldsIn(this);
         car.drive();
     }
