@@ -23,6 +23,7 @@ public class Car {
         remote.setListener(this);
     }
     public void drive(){
+        engine.start();
         Log.d(TAG, "drive: driving...");
     }
 }
