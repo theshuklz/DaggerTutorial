@@ -6,8 +6,9 @@ import om.shuklz.daggertutorial.car.Rims;
 import om.shuklz.daggertutorial.car.Tires;
 import om.shuklz.daggertutorial.car.Wheels;
 
+//make the module abstract if all the methods are static
 @Module
-public class WheelsModule {
+public abstract class WheelsModule {
     //adding static to methods improves performance as dagger doesn't has to
     //instantiate the module
 
